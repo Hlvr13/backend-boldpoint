@@ -27,7 +27,7 @@ app.use(jsonParser)
 /* End Points */
 // Basic verification
 app.get('/', (req, res) => {
-    res.send('Server working')
+    res.send('Server working again')
 })
 
 //Testing github action commit
