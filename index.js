@@ -30,6 +30,7 @@ app.get('/', (req, res) => {
     res.send('Server working')
 })
 
+//Testing github action commit
 // Graphql endpoint
 // TODO: Personally, Eventhough it's really simple to use, I don't like this library because of the 
 // TODO: lack of configuration for subscription. Tried ApolloServer but got an error while importing the library
