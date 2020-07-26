@@ -26,16 +26,16 @@ app.use(jsonParser)
 
 /* End Points */
 // Basic verification
-app.get('/', (req, res) => {
-    res.send('Server working correctly')
-})
+// app.get('/', (req, res) => {
+//     res.send('Server working correctly')
+// })
 
 //Testing github action commit
 // Graphql endpoint
 // TODO: Personally, Eventhough it's really simple to use, I don't like this library because of the 
 // TODO: lack of configuration for subscription. Tried ApolloServer but got an error while importing the library
 // TODO: and because of time, opted for this one. 
-app.use('/graphql', expressGraphql((req, res) => ({
+app.use('/', expressGraphql((req, res) => ({
     schema,
     graphiql: true,
     pretty: true,
