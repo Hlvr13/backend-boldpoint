@@ -24,6 +24,7 @@ const app = express()
 app.use(cors())
 app.use(jsonParser)
 
+
 /* End Points */
 // Basic verification
 app.get('/', (req, res) => {
